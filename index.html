@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type = "text/css" href="style.css">
+        <script type="text/javascript" src="matrix.js"></script>
+        <title>Simple Matrix Solver</title>
+    </head>
+
+    <body>
+        <h1>Online Matrix Solver</p>
+
+        <p>To solve <strong>A</strong><em>x</em>=<strong>B</strong> for
+           <em>x</em>, enter <strong>A</strong> on the left box and
+           <strong>B</strong> on the right box.</br>
+
+           Separate rows with a new line. </br>
+           Separate columns with space.
+        </p>
+        <form><table>
+            <tr>
+                <td>
+                    <textarea id="matrixleft" rows="10" cols="50"></textarea>
+                </td>
+                <td>
+                    <textarea id="matrixright" rows="10" cols="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" id="solve"
+                            onclick="matrixSolveDriver();">
+                        Solve
+                    </button>
+                </td>
+            </tr>
+        </table></form>
+
+        <div id="solution">
+            <p>The solutions are:</p>
+            <p id="solutions">
+                Press solve to get the answer.
+            </p>
+        </div>
+    </body>
+</html>

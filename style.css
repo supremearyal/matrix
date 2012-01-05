@@ -1,0 +1,19 @@
+body {
+    background-color: #abbbc9;
+}
+
+p {
+    font-size: 15px;
+}
+
+pre {
+    font-size: 15px;
+}
+
+textarea {
+    font-size: 15px;
+}
+
+button {
+    font-size: 20px;
+}
